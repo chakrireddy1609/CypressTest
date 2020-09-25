@@ -23,6 +23,7 @@ describe('Demo1',function(){
         cy.get('#yearbox').select('1989')
         cy.get('#basicBootstrapForm > div:nth-child(11) > div:nth-child(3) > select').select('September')
         cy.get('#daybox').select('16')
+        cy.focused().should('have.class','to-do')
 
     })
 
